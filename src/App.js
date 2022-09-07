@@ -7,17 +7,35 @@ import Desktop2 from "./components/Desktop2";
 import Desktop6 from "./components/Desktop6";
 import Desktop3 from "./components/Desktop3";
 import Desktop4 from "./components/Desktop4";
-import { useMediaQuery } from 'react-responsive'
 
 
 
-export default function App() {
+import { useMediaQuery } from "react-responsive";
+
+
+
+function App() {
+const isDesktop1View = useMediaQuery({minWidth: 1900});
+const isDesktop2View = useMediaQuery({minWidth: 1600, maxWidth:1900 }); 
+const isDesktop3View = useMediaQuery({minWidth: 1400, maxWidth:1600 });
+const isDesktop4View = useMediaQuery({minWidth: 1100, maxWidth:1400 });
+const isDesktop6View = useMediaQuery({minWidth: 800, maxWidth:1100 }); 
+const isDesktop7View = useMediaQuery({maxWidth:800 });
   return (
-    
-   <Desktop4 {...desktop4Data} />
-       
+  <>
+  {isDesktop1View &&  <Desktop1 {...desktop1Data} />}
+  {isDesktop2View &&  <Desktop2 {...desktop2Data} />}
+  {isDesktop3View &&  <Desktop3 {...desktop3Data} />}
+  {isDesktop4View &&  <Desktop4 {...desktop4Data} />}
+ 
+  {isDesktop6View &&  <Desktop6 {...desktop6Data} />}
+  {isDesktop7View &&  <Desktop7 {...desktop7Data} />}
+  </>
+  
   );
 }
+
+export default App;
 
 const desktop7Data = {
     rspLogo1: "/img/rsp-logo-1@2x.png",
