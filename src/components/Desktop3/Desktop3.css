@@ -1,0 +1,193 @@
+.desktop-3 {
+  align-items: flex-start;
+  background-color: var(--gray-suit);
+  border: 3px none;
+  display: flex;
+  flex-direction: column;
+  height: 1024px;
+  overflow: hidden;
+  width: 1440px;
+}
+
+.flex-col-2 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-left: -10px;
+  margin-top: -14px;
+  min-height: 537px;
+  width: 1472px;
+}
+
+.overlap-group-4 {
+  align-items: center;
+  background-color: var(--alto);
+  display: flex;
+  flex-direction: column;
+  min-height: 124px;
+  padding: 0 10px;
+  width: 1472px;
+}
+
+.flex-row-6 {
+  align-items: flex-start;
+  display: flex;
+  margin-left: 13.0px;
+  margin-top: 46px;
+  min-width: 1389px;
+  position: relative;
+}
+
+.rsp-logo-1-4 {
+  height: 51px;
+  object-fit: cover;
+  width: 253px;
+}
+
+.line-1-4 {
+  height: 2px;
+  margin-right: 12.0px;
+  margin-top: 25px;
+  object-fit: cover;
+  width: 1440px;
+}
+
+.sfondo_schermata_passerelle-container-4 {
+  align-items: flex-start;
+  display: flex;
+  margin-left: 38px;
+  margin-top: 47px;
+  min-width: 1000px;
+}
+
+.sfondo_schermata_passerelle-1-4 {
+  display: block;
+  height: 337px;
+  object-fit: cover;
+  opacity: 0;
+  transform: scale(1.1);
+  width: 210px;
+}
+
+.sfondo_schermata_passerelle-1-4.animate-enter10 {
+  animation: animate-enter10-frames 0.20s ease-in-out 0.00s 1 normal forwards;
+  display: block;
+  opacity: 0;
+  transform: scale(1.1);
+}
+
+.sfondo_schermata_passerelle-2-4,
+.sfondo_schermata_passerelle-3-2 {
+  display: block;
+  height: 337px;
+  margin-left: 185px;
+  object-fit: cover;
+  opacity: 0;
+  transform: scale(1.1);
+  width: 210px;
+}
+
+.sfondo_schermata_passerelle-2-4.animate-enter11 {
+  animation: animate-enter11-frames 0.20s ease-in-out 0.00s 1 normal forwards;
+  display: block;
+  opacity: 0;
+  transform: scale(1.1);
+}
+
+.sfondo_schermata_passerelle-3-2.animate-enter12 {
+  animation: animate-enter12-frames 0.20s ease-in-out 0.00s 1 normal forwards;
+  display: block;
+  opacity: 0;
+  transform: scale(1.1);
+}
+
+.passerella-3 {
+  letter-spacing: 0;
+  margin-left: 74px;
+  min-height: 29px;
+}
+
+.flex-row-7 {
+  align-items: flex-start;
+  display: flex;
+  height: 368px;
+  margin-left: 38px;
+  margin-top: 45px;
+  min-width: 990px;
+}
+
+.plancett-container-2 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 368px;
+  width: 210px;
+}
+
+.sfondo_schermata_plancette-1-4 {
+  cursor: pointer;
+  height: 337px;
+  object-fit: cover;
+  transition: all 0.2s ease;
+  width: 210px;
+}
+
+.sfondo_schermata_plancette-1-4:hover,
+.sfondo_schermata_plancette-3-3:hover,
+.sfondo_schermata_plancette-2-3:hover {
+  transform: scale(1.1);
+}
+
+.plancetta-4 {
+  letter-spacing: 0;
+  margin-right: 41.0px;
+  margin-top: 2px;
+  min-height: 29px;
+  min-width: 107px;
+}
+
+.sfondo_schermata_plancette-3-3 {
+  cursor: pointer;
+  height: 337px;
+  margin-left: 175px;
+  object-fit: cover;
+  transition: all 0.2s ease;
+  width: 210px;
+}
+
+.sfondo_schermata_plancette-2-3 {
+  cursor: pointer;
+  height: 337px;
+  margin-left: 185px;
+  object-fit: cover;
+  transition: all 0.2s ease;
+  width: 210px;
+}
+
+@keyframes animate-enter11-frames {
+  from{opacity: 0;
+transform: scale(1.1);
+}
+to{opacity: 1;
+transform: scale(1);
+}
+}
+
+@keyframes animate-enter10-frames {
+  from{opacity: 0;
+transform: scale(1.1);
+}
+to{opacity: 1;
+transform: scale(1);
+}
+}
+
+@keyframes animate-enter12-frames {
+  from{opacity: 0;
+transform: scale(1.1);
+}
+to{opacity: 1;
+transform: scale(1);
+}
+}
+
