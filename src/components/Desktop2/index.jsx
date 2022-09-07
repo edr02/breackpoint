@@ -23,25 +23,25 @@ function Desktop2(props) {
         <div className="flex-col-1">
           <div className="overlap-group-2">
             <div className="flex-row-3">
-              <img className="rsp-logo-1-2" src={rspLogo1} />
+              <img className="rsp-logo-1-2" src={rspLogo1} alt="alt" />
               <TextInput className={textInputProps.className} />
             </div>
-            <img className="line-1-2" src={line1} />
+            <img className="line-1-2" src={line1} alt="alt" />
           </div>
           <div className="sfondo_schermata_passerelle-container-2">
-            <img className="sfondo_schermata_passerelle-1-2 animate-enter5" src={sfondo_Schermata_Passerelle1} />
-            <img className="sfondo_schermata_passerelle-2-2 animate-enter6" src={sfondo_Schermata_Passerelle2} />
-            <img className="sfondo_schermata_passerelle-3-1 animate-enter7" src={sfondo_Schermata_Passerelle3} />
+            <img className="sfondo_schermata_passerelle-1-2 animate-enter5" src={sfondo_Schermata_Passerelle1} alt="alt" />
+            <img className="sfondo_schermata_passerelle-2-2 animate-enter6" src={sfondo_Schermata_Passerelle2} alt="alt" />
+            <img className="sfondo_schermata_passerelle-3-1 animate-enter7" src={sfondo_Schermata_Passerelle3} alt="alt" />
           </div>
           <div className="passerella-1 inter-normal-black-24px">{passerella}</div>
         </div>
         <div className="flex-row-4">
           <div className="plancett-container-1">
-            <img className="sfondo_schermata_plancette-1-2" src={sfondo_Schermata_Plancette1} />
+            <img className="sfondo_schermata_plancette-1-2" src={sfondo_Schermata_Plancette1} alt="alt" />
             <div className="plancetta-2 inter-normal-black-24px">{plancetta}</div>
           </div>
-          <img className="sfondo_schermata_plancette-3-1" src={sfondo_Schermata_Plancette3} />
-          <img className="sfondo_schermata_plancette-2-2" src={sfondo_Schermata_Plancette2} />
+          <img className="sfondo_schermata_plancette-3-1" src={sfondo_Schermata_Plancette3} alt="alt" />
+          <img className="sfondo_schermata_plancette-2-2" src={sfondo_Schermata_Plancette2} alt="alt" />
         </div>
       </div>
     </div>

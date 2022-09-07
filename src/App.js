@@ -14,7 +14,7 @@ import { useMediaQuery } from 'react-responsive'
 export default function App() {
   return (
     
-   <Desktop7 {...desktop7Data} />
+   <Desktop4 {...desktop4Data} />
        
   );
 }
