@@ -7,35 +7,17 @@ import Desktop2 from "./components/Desktop2";
 import Desktop6 from "./components/Desktop6";
 import Desktop3 from "./components/Desktop3";
 import Desktop4 from "./components/Desktop4";
+import { useMediaQuery } from 'react-responsive'
 
-function App() {
+
+export default function App() {
   return (
-    <Router>
-      <Switch>
-        <Route path="/desktop-7">
-          <Desktop7 {...desktop7Data} />
-        </Route>
-        <Route path="/:path(|desktop-1)">
-          <Desktop1 {...desktop1Data} />
-        </Route>
-        <Route path="/desktop-2-all-breakpoints">
-          <Desktop2 {...desktop2Data} />
-        </Route>
-        <Route path="/desktop-6">
-          <Desktop6 {...desktop6Data} />
-        </Route>
-        <Route path="/desktop-3">
-          <Desktop3 {...desktop3Data} />
-        </Route>
-        <Route path="/desktop-4">
-          <Desktop4 {...desktop4Data} />
-        </Route>
-      </Switch>
-    </Router>
+    
+   <Desktop1 {...desktop1Data} />
+       
   );
 }
 
-export default App;
 const desktop7Data = {
     rspLogo1: "/img/rsp-logo-1@2x.png",
     line1: "/img/line-1@1x.png",
@@ -129,4 +111,6 @@ const desktop4Data = {
     sfondo_Schermata_Plancette2: "/img/sfondo-schermata-plancette-1@2x.png",
     textInputProps: textInput5Data,
 };
+
+
 
