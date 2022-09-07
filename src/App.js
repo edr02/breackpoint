@@ -10,10 +10,11 @@ import Desktop4 from "./components/Desktop4";
 import { useMediaQuery } from 'react-responsive'
 
 
+
 export default function App() {
   return (
     
-   <Desktop1 {...desktop1Data} />
+   <Desktop7 {...desktop7Data} />
        
   );
 }

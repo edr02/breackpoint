@@ -2,15 +2,17 @@ import React from "react";
 import TextInput from "../TextInput";
 import "./Desktop6.css";
 
+import rspLogo1 from '../../img/rsp-logo-1@2x.png'
+import line1 from '../../img/line-1-5@1x.png'
+import sfondo_Schermata_Passerelle1 from '../../img/sfondo-schermata-passerelle-1@2x.png'
+import sfondo_Schermata_Passerelle2 from '../../img/sfondo-schermata-passerelle-1@2x.png'
+import sfondo_Schermata_Plancette1 from '../../img/sfondo-schermata-plancette-1@2x.png'
+import sfondo_Schermata_Plancette3 from '../../img/sfondo-schermata-plancette-1@2x.png'
+
 function Desktop6(props) {
   const {
-    rspLogo1,
-    line1,
-    sfondo_Schermata_Passerelle1,
-    sfondo_Schermata_Passerelle2,
+  
     passerella,
-    sfondo_Schermata_Plancette1,
-    sfondo_Schermata_Plancette3,
     plancetta,
     textInputProps,
   } = props;
