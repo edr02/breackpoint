@@ -11,125 +11,16 @@ import Desktop4 from "./components/Desktop4";
 
 
 import { useMediaQuery } from "react-responsive";
+import Desktop001 from "./components/Desktop-breackpoint";
 
 
 
 function App() {
-const isDesktop1View = useMediaQuery({minWidth: 1900});
-const isDesktop2View = useMediaQuery({minWidth: 1600, maxWidth:1900 }); 
-const isDesktop3View = useMediaQuery({minWidth: 1400, maxWidth:1600 });
-const isDesktop4View = useMediaQuery({minWidth: 1100, maxWidth:1400 });
-const isDesktop6View = useMediaQuery({minWidth: 800, maxWidth:1100 }); 
-const isDesktop7View = useMediaQuery({maxWidth:800 });
   return (
-  <>
-  {isDesktop1View &&  <Desktop1 {...desktop1Data} />}
-  {isDesktop2View &&  <Desktop2 {...desktop2Data} />}
-  {isDesktop3View &&  <Desktop3 {...desktop3Data} />}
-  {isDesktop4View &&  <Desktop4 {...desktop4Data} />}
- 
-  {isDesktop6View &&  <Desktop6 {...desktop6Data} />}
-  {isDesktop7View &&  <Desktop7 {...desktop7Data} />}
-  </>
+  <Desktop001/>
   
   );
 }
 
 export default App;
-
-const desktop7Data = {
-    rspLogo1: "/img/rsp-logo-1@2x.png",
-    line1: "/img/line-1@1x.png",
-    sfondo_Schermata_Passerelle1: "/img/sfondo-schermata-passerelle-1@2x.png",
-    sfondo_Schermata_Passerelle2: "/img/sfondo-schermata-passerelle-1@2x.png",
-    passerella: "Passerella",
-    sfondo_Schermata_Plancette1: "/img/sfondo-schermata-plancette-1@2x.png",
-    sfondo_Schermata_Plancette2: "/img/sfondo-schermata-plancette-1@2x.png",
-    plancetta: "Plancetta",
-};
-
-const desktop1Data = {
-    rspLogo1: "/img/rsp-logo-1@2x.png",
-    line1: "/img/line-1-1@1x.png",
-    sfondo_Schermata_Passerelle1: "/img/sfondo-schermata-passerelle-1@2x.png",
-    sfondo_Schermata_Passerelle2: "/img/sfondo-schermata-passerelle-1@2x.png",
-    sfondo_Schermata_Passerelle3: "/img/sfondo-schermata-passerelle-1@2x.png",
-    title: "Passerella",
-    sfondo_Schermata_Plancette1: "/img/sfondo-schermata-plancette-1@2x.png",
-    plancetta: "Plancetta",
-    sfondo_Schermata_Plancette3: "/img/sfondo-schermata-plancette-1@2x.png",
-    sfondo_Schermata_Plancette2: "/img/sfondo-schermata-plancette-1@2x.png",
-};
-
-const textInput2Data = {
-    className: "text-input-1",
-};
-
-const desktop2Data = {
-    rspLogo1: "/img/rsp-logo-1@2x.png",
-    line1: "/img/line-1-2@1x.png",
-    sfondo_Schermata_Passerelle1: "/img/sfondo-schermata-passerelle-1@2x.png",
-    sfondo_Schermata_Passerelle2: "/img/sfondo-schermata-passerelle-1@2x.png",
-    sfondo_Schermata_Passerelle3: "/img/sfondo-schermata-passerelle-1@2x.png",
-    passerella: "Passerella",
-    sfondo_Schermata_Plancette1: "/img/sfondo-schermata-plancette-1@2x.png",
-    plancetta: "Plancetta",
-    sfondo_Schermata_Plancette3: "/img/sfondo-schermata-plancette-1@2x.png",
-    sfondo_Schermata_Plancette2: "/img/sfondo-schermata-plancette-1@2x.png",
-    textInputProps: textInput2Data,
-};
-
-const textInput3Data = {
-    className: "text-input-2",
-};
-
-const desktop6Data = {
-    rspLogo1: "/img/rsp-logo-1@2x.png",
-    line1: "/img/line-1-3@1x.png",
-    sfondo_Schermata_Passerelle1: "/img/sfondo-schermata-passerelle-1@2x.png",
-    sfondo_Schermata_Passerelle2: "/img/sfondo-schermata-passerelle-1@2x.png",
-    passerella: "Passerella",
-    sfondo_Schermata_Plancette1: "/img/sfondo-schermata-plancette-1@2x.png",
-    sfondo_Schermata_Plancette3: "/img/sfondo-schermata-plancette-1@2x.png",
-    plancetta: "Plancetta",
-    textInputProps: textInput3Data,
-};
-
-const textInput4Data = {
-    className: "text-input-3",
-};
-
-const desktop3Data = {
-    rspLogo1: "/img/rsp-logo-1@2x.png",
-    line1: "/img/line-1-4@1x.png",
-    sfondo_Schermata_Passerelle1: "/img/sfondo-schermata-passerelle-1@2x.png",
-    sfondo_Schermata_Passerelle2: "/img/sfondo-schermata-passerelle-1@2x.png",
-    sfondo_Schermata_Passerelle3: "/img/sfondo-schermata-passerelle-1@2x.png",
-    passerella: "Passerella",
-    sfondo_Schermata_Plancette1: "/img/sfondo-schermata-plancette-1@2x.png",
-    plancetta: "Plancetta",
-    sfondo_Schermata_Plancette3: "/img/sfondo-schermata-plancette-1@2x.png",
-    sfondo_Schermata_Plancette2: "/img/sfondo-schermata-plancette-1@2x.png",
-    textInputProps: textInput4Data,
-};
-
-const textInput5Data = {
-    className: "text-input-4",
-};
-
-const desktop4Data = {
-    rspLogo1: "/img/rsp-logo-1@2x.png",
-    line1: "/img/line-1-5@1x.png",
-    sfondo_Schermata_Passerelle1: "/img/sfondo-schermata-passerelle-1@2x.png",
-    sfondo_Schermata_Passerelle2: "/img/sfondo-schermata-passerelle-1@2x.png",
-    sfondo_Schermata_Passerelle3: "/img/sfondo-schermata-passerelle-1@2x.png",
-    passerella: "Passerella",
-    sfondo_Schermata_Plancette1: "/img/sfondo-schermata-plancette-1@2x.png",
-    plancetta: "Plancetta",
-    sfondo_Schermata_Plancette3: "/img/sfondo-schermata-plancette-1@2x.png",
-    sfondo_Schermata_Plancette2: "/img/sfondo-schermata-plancette-1@2x.png",
-    textInputProps: textInput5Data,
-};
-
-
 
