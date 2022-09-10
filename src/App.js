@@ -12,12 +12,25 @@ import Desktop4 from "./components/Desktop4";
 
 import { useMediaQuery } from "react-responsive";
 import Desktop001 from "./components/Desktop-breackpoint";
+import Desktop002 from "./components/Desktop-breackpoint - 2";
 
 
 
 function App() {
   return (
-  <Desktop001/>
+    <Router>
+    <div className="App">
+        <Switch>
+           <Route exact path="/">
+             <Desktop001/>
+           </Route>
+           <Route path="/plancetta">
+             <Desktop002/>
+           </Route>
+        </Switch>
+     </div>
+    </Router>
+  
   
   );
 }

@@ -22,7 +22,7 @@ import { useMediaQuery } from "react-responsive";
 
 
 
-function Desktop001() {
+function Desktop002() {
 const isDesktop1View = useMediaQuery({minWidth: 1900});
 const isDesktop2View = useMediaQuery({minWidth: 1600, maxWidth:1900 }); 
 const isDesktop3View = useMediaQuery({minWidth: 1400, maxWidth:1600 });
@@ -34,16 +34,13 @@ const isDesktop7View = useMediaQuery({maxWidth:800 });
   {isDesktop1View &&  <Desktop1 {...desktop1Data} />}
   {isDesktop2View &&  <Desktop2 {...desktop2Data} />}
   {isDesktop3View &&  <Desktop3 {...desktop3Data} />}
-  {isDesktop4View &&  <Desktop4 {...desktop4Data} />}
- 
-  {isDesktop6View &&  <Desktop6 {...desktop6Data} />}
-  {isDesktop7View &&  <Desktop7 {...desktop7Data} />}
+  
   </>
   
   );
 }
 
-export default Desktop001;
+export default Desktop002;
 
 
 const desktop7Data = {

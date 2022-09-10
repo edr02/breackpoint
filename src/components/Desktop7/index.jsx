@@ -7,6 +7,7 @@ import sfondo_Schermata_Passerelle1 from '../../img/sfondo-schermata-passerelle-
 import sfondo_Schermata_Passerelle2 from '../../img/sfondo-schermata-passerelle-1@2x.png'
 import sfondo_Schermata_Plancette1 from '../../img/sfondo-schermata-plancette-1@2x.png'
 import sfondo_Schermata_Plancette2 from '../../img/sfondo-schermata-plancette-1@2x.png'
+import { Switch, BrowserRouter as Router, Link } from "react-router-dom";
 
 
 function Desktop7(props) {
@@ -16,6 +17,7 @@ function Desktop7(props) {
   } = props;
 
   return (
+    <Router>
     <div className="container-center-horizontal">
       <div className="desktop-7 inter-normal-black-24px screen">
         <div className="overlap-group">
@@ -31,12 +33,15 @@ function Desktop7(props) {
         </div>
         <div className="passerella">{passerella}</div>
         <div className="sfondo_schermata_plancette-container">
-          <img className="sfondo_schermata_plancette-1" src={sfondo_Schermata_Plancette1} alt="alt" />
+          <Link to="/plancetta">
+           <img className="sfondo_schermata_plancette-1" src={sfondo_Schermata_Plancette1} alt="alt" />
+         </Link>
           <img className="sfondo_schermata_plancette-2" src={sfondo_Schermata_Plancette2} alt="alt" />
         </div>
         <div className="plancetta">{plancetta}</div>
       </div>
     </div>
+    </Router>
   );
 }
 

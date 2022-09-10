@@ -9,7 +9,7 @@ import sfondo_Schermata_Passerelle3 from '../../img/sfondo-schermata-passerelle-
 import sfondo_Schermata_Plancette1 from '../../img/sfondo-schermata-plancette-1@2x.png'
 import sfondo_Schermata_Plancette2 from '../../img/sfondo-schermata-plancette-1@2x.png'
 import sfondo_Schermata_Plancette3 from '../../img/sfondo-schermata-plancette-1@2x.png'
-
+import { Switch, BrowserRouter as Router, Link } from "react-router-dom";
 
 
 function Desktop1(props) {
@@ -27,6 +27,7 @@ function Desktop1(props) {
   } = props;
 
   return (
+    <Router>
     <div className="container-center-horizontal">
       <div className="desktop-1 screen">
         <div className="flex-col">
@@ -46,7 +47,9 @@ function Desktop1(props) {
         </div>
         <div className="flex-row-2">
           <div className="plancett-container">
-            <img className="sfondo_schermata_plancette-1-1" src={sfondo_Schermata_Plancette1} alt="alt"/>
+             <Link to="/">
+               <img className="sfondo_schermata_plancette-1-1" src={sfondo_Schermata_Plancette1} alt="alt"/>
+              </Link> 
             <div className="plancetta-1 inter-normal-black-36px">{plancetta}</div>
           </div>
           <img className="sfondo_schermata_plancette-3" src={sfondo_Schermata_Plancette3} alt="alt"/>
@@ -54,6 +57,7 @@ function Desktop1(props) {
         </div>
       </div>
     </div>
+    </Router>
   );
 }
 
