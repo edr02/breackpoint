@@ -47,9 +47,9 @@ function Desktop1(props) {
         </div>
         <div className="flex-row-2">
           <div className="plancett-container">
-             <Link to="/">
+             <a href="/">
                <img className="sfondo_schermata_plancette-1-1" src={sfondo_Schermata_Plancette1} alt="alt"/>
-              </Link> 
+              </a> 
             <div className="plancetta-1 inter-normal-black-36px">{plancetta}</div>
           </div>
           <img className="sfondo_schermata_plancette-3" src={sfondo_Schermata_Plancette3} alt="alt"/>
